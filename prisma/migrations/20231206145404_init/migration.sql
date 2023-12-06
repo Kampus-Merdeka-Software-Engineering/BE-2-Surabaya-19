@@ -5,6 +5,7 @@ CREATE TABLE `Menus` (
     `name` VARCHAR(200) NOT NULL,
     `price` VARCHAR(200) NOT NULL,
     `image` VARCHAR(200) NOT NULL,
+    `desc` VARCHAR(200) NOT NULL,
 
     PRIMARY KEY (`id_menu`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
