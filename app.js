@@ -8,11 +8,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const menusRoutes = require("./routes/menusRoutes");
+const menuRoutes = require("./routes/menuRoutes");
 
-app.use(menusRoutes);
+app.use(menuRoutes);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, "0.0.0.0", function () {
+app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });

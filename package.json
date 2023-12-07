@@ -8,6 +8,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "keywords": [],
   "author": "andrayusaldi9@gmail.com",
   "license": "ISC",
   "dependencies": {

@@ -10,8 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Menus {
-  id_menu Int @id @default(autoincrement())
+model Menu {
+  id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
   name String @db.VarChar(200)
   price String @db.VarChar(200)
