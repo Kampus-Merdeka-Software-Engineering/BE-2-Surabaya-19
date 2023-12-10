@@ -1,6 +1,6 @@
 const prisma = require("../config/prisma");
 
-async function getAllmenus() {
+async function getAllMenus() {
   try {
     const menus = await prisma.menu.findMany();
 
@@ -10,6 +10,18 @@ async function getAllmenus() {
   }
 }
 
+async function createMenu(menu) {
+  console.log(menu);
+  try {
+    return await prisma.menu.create({
+      data: menu,
+    });
+  } catch (err) {
+    throw err;
+  }
+}
+
 module.exports = {
-  getAllmenus,
+  getAllMenus,
+  createMenu,
 };
