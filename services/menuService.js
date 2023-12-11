@@ -21,20 +21,7 @@ async function createMenu(menu) {
   }
 }
 
-async function deleteMenu(menuId) {
-  try {
-    return await prisma.menu.delete({
-      where: {
-        id: menuId,
-      },
-    });
-  } catch (err) {
-    throw err;
-  }
-}
-
 module.exports = {
   getAllMenus,
   createMenu,
-  deleteMenu,
 };
