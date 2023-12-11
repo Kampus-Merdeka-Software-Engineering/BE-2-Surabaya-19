@@ -7,7 +7,7 @@ async function getAllMenus(req, res) {
 async function createMenu(req, res) {
   const menu = req.body;
 
-  const createdMenu = await menuService.createMenu(Menu);
+  const createdMenu = await menuService.createMenu(menu);
   res.status(201).json(createdMenu);
 }
 
